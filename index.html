@@ -15,377 +15,566 @@
   <title>Bootstrap</title>
 </head>
 <body class="text-center">
-  <div class="container" style="background-color: rgba(0,0,200,0.6);">
-    .container
+  <style>
+  .clearfix {
+    overflow: auto;
+  }
+</style>
+<div class="container" style="background-color: rgba(0,0,200,0.6);">
+  .container
+</div>
+<div style="background-color: rgba(200,0,0,0.6);" class="container-fluid">
+  .container-fluid
+</div>
+<div class="container">
+  <div class="row">
+    <div style="background-color: #ff1" class="col-lg-2">
+      .col-lg-2
+    </div>
+    <div style="background-color: #ff43ee" class="col-lg-4">
+      .col-lg-4
+    </div>
+    <div style="background-color: #11ddff" class="col-lg-6">
+      .col-lg-6
+    </div>
   </div>
-  <div style="background-color: rgba(200,0,0,0.6);" class="container-fluid">
-    .container-fluid
+</div>
+<hr>
+<div class="container">
+  <p class="display-1">.display-1</p>
+  <p class="display-2">.display-2</p>
+  <p class="display-3">.display-3</p>
+  <p class="display-4">.display-4</p>
+</div>
+<hr>
+<div class="container">
+  <h1>h1 code <small>small code(<code>small</code>)</small></h1>
+  <hr>
+  <p> Use the mark element to <mark>highlight text.</mark></p>
+  <!--<p> Use the abbr element to <abbr>highlight text.</abbr></p>-->
+</div>
+<hr>
+<div class="container">
+  <p> <p class="display-4">Add the .blockquote class to a <code>blockquote</code></p><blockquote class="blockquote"> when quoting blocks of content from another source:</blockquote></p>
+</div>
+<hr>
+<div class="container">
+  <dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>
+</div>
+<hr>
+<div class="container">
+  <p>Bootstrap 4 will style the HTML <code>kbd</code> element in the following way:</p>
+  <p>Example</p>
+  <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+</div>
+<hr>
+<div class="container">
+  <p>Bootstrap 4 will style the HTML <code>pre</code> element in the following way:</p>
+  <pre>Text in a pre element
+    is displayed in a fixed-width
+    font, and it preserves
+    both      spaces and
+  line breaks.</pre>
+</div>
+<hr>
+<div class="container">
+  <h2 class="display-4">Contextual Colors</h2>
+  <p>Use the contextual classes to provide "meaning through colors":</p>
+  <p>The classes for text colors are: <span class="text-muted">.text-muted</span>, <span class="text-primary">.text-primery</span>, <span class="text-success">.text-success</span>, <span class="text-info">.text-info</span>, <span class="text-warning">.text-warning</span>, <span class="text-danger">.text-danger</span>, <span class="text-secondary">.text-secondary</span>, <span class="text-white bg-dark">.text-white</span>, <span class="text-dark">.text-dark</span>, <span class="text-body">.text-body</span></p>
+  <p class="display-4">Contextual text classes can also be used on links, which will add a darker hover color</p>
+  <a href="#" class="text-muted">Muted link.</a>
+  <a href="#" class="text-primary">Primary link.</a>
+  <a href="#" class="text-success">Success link.</a>
+  <a href="#" class="text-info">Info link.</a>
+  <a href="#" class="text-warning">Warning link.</a>
+  <a href="#" class="text-danger">Danger link.</a>
+  <a href="#" class="text-secondary">Secondary link.</a>
+  <a href="#" class="text-dark">Dark grey link.</a>
+  <a href="#" class="text-body">Body/black link.</a>
+  <a href="#" class="text-light">Light grey link.</a>
+</div>
+<hr>
+<div class="container">
+  <p class="display-3">Background colors</p>
+  <p>The classes for background colors are: <span class="bg-primary text-light">.bg-primary</span>, <span class="bg-success text-light">.bg-success</span>, <span class="bg-info text-light">.bg-info</span>, <span class="bg-warning text-light">.bg-warning</span>, <span class="bg-danger text-light">.bg-danger</span>, <span class="bg-secondary text-light">.bg-secondary</span>, <span class="bg-dark text-light">.bg-dark</span> and <span class="bg-light">.bg-light</span>.</p>
+</div>
+<hr>
+<div class="container">
+  <h2 class="display-4">Bootstrap tables</h2>
+  <p>The <mark class="text-danger">.table</mark> class adds basic styling to a table:</p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Firstanem</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Striped table</h2>
+  <p>The <mark class="text-danger">.table-striped</mark> class adds zebra-stripes to a table:</p>
+  <table class="table-striped table">
+    <thead>
+      <tr>
+        <th>Firstanem</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Bordered table</h2>
+  <p>The <mark class="text-danger">.table-bordered</mark> class adds borders on all sides of the table and cells:</p>
+  <table class="table-bordered table">
+    <thead>
+      <tr>
+        <th>Firstanem</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Hover rows</h2>
+  <p>The <mark class="text-danger">.table-hover</mark> class adds a hover effect (grey background color) on table rows:</p>
+  <table class="table-hover table">
+    <thead>
+      <tr>
+        <th>Firstanem</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Dark table</h2>
+  <p>The <mark class="text-danger">.table-dark</mark> class adds a black background to the table:</p>
+  <table class="table-dark table">
+    <thead>
+      <tr>
+        <th>Firstanem</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Dark Striped Table</h2>
+  <p>Combine <mark class="text-danger">.table-dark</mark> and <mark class="text-danger">.table-striped</mark> to create a dark, striped table:</p>
+  <table class="table-dark table-striped table">
+    <thead>
+      <tr>
+        <th>Firstanem</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Hoverable Dark Table</h2>
+  <p>The <mark class="text-danger">.table-hover</mark> class adds a hover effect (grey background color) on table rows:</p>
+  <table class="table-dark table-hover table">
+    <thead>
+      <tr>
+        <th>Firstanem</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Borderless Table</h2>
+  <p>The <mark class="text-danger">.table-borderless</mark> class removes borders from the table:</p>
+  <table class="table-borderless table">
+    <thead>
+      <tr>
+        <th>Firstanem</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Contextual Classes</h2>
+  <p>Contextual classes can be used to color the whole table (<code>table</code>),  the table rows (<code>tr</code>) or table cells (<code>td</code>).</p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Default</td>
+        <td>Defaultson</td>
+        <td>def@somemail.com</td>
+      </tr>      
+      <tr class="table-primary">
+        <td>Primary</td>
+        <td>Joe</td>
+        <td>joe@example.com</td>
+      </tr>
+      <tr class="table-success">
+        <td>Success</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr class="table-danger">
+        <td>Danger</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr class="table-info">
+        <td>Info</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+      <tr class="table-warning">
+        <td>Warning</td>
+        <td>Refs</td>
+        <td>bo@example.com</td>
+      </tr>
+      <tr class="table-active">
+        <td>Active</td>
+        <td>Activeson</td>
+        <td>act@example.com</td>
+      </tr>
+      <tr class="table-secondary">
+        <td>Secondary</td>
+        <td>Secondson</td>
+        <td>sec@example.com</td>
+      </tr>
+      <tr class="table-light">
+        <td>Light</td>
+        <td>Angie</td>
+        <td>angie@example.com</td>
+      </tr>
+      <tr class="table-dark text-dark">
+        <td>Dark</td>
+        <td>Bo</td>
+        <td>bo@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Table Head Colors</h2>
+  <p>The <mark class="text-danger">.thead-dark</mark> class adds a black background to table headers, and the <mark class="text-danger">.thead-light</mark> class adds a grey background to table headers:</p>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Small Table</h2>
+  <p>The <mark class="text-danger">.table-sm</mark> class makes the table smaller by cutting cell padding in half:</p>
+  <table class="table table-bordered table-sm">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<hr>
+<div class="containe">
+  <h2 class="display-3">Bootstrap 4 Images</h2>
+  <h2>Bootstrap 4 Image Shapes</h2>
+  <div style="display: inline-block;">
+    <p>Rounded Corners:</p>
+    <img src="img/paris.jpg" class="rounded" alt="Cinque Terre" width="200px">
+  </div>
+  <div style="display: inline-block;">
+    <p>Circle:</p>
+    <img src="img/newyork.jpg" class="rounded-circle" alt="Cinque Terre" width="200px">
+  </div>
+  <div style="display:inline-block;">
+    <p>Thumbnail:</p>
+    <img src="img/sanfran.jpg" class="img-thumbnail" alt="Cinque Terre" width="200px">
+  </div>
+  <h2>Aligning Images</h2>
+  <p>Float an image to the right with the <mark class="text-danger">.float-right</mark> class or to the left with <mark class="text-danger">.float-left</mark>:</p>
+  <div class="container clearfix">
+    <img width="300px" src="img/paris.jpg" class="float-left"> 
+    <img width="300px" src="img/paris.jpg" class="float-right">
+  </div>
+</div>
+<hr>
+<h2 class="display-3">Bootstrap 4 Jumbotron</h2>
+<pre>A jumbotron indicates a big grey box for calling extra attention to some special content or information.
+
+Tip: Inside a jumbotron you can put nearly any valid HTML, including other Bootstrap elements/classes.</pre>
+<div class="container">
+  <div class="jumbotron">
+    <h2>Bootstrap Tutorial</h2>
+    <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+  </div>
+</div>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1>Bootstrap Tutorial</h1>      
+    <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+  </div>
+</div>
+<hr>
+<div class="container-fluid">
+  <div class="container">
+    <h2 class="display-3">Bootstrap 4 Alerts</h2>
+    <p>Alerts are created with the <mark class="text-danger">.alert</mark> class, followed by one of the contextual classes <mark class="text-danger">.alert-success</mark>, <mark class="text-danger" >.alert-info</mark>, <mark class="text-danger">.alert-warning</mark>, <mark class="text-danger">.alert-danger</mark>, <mark class="text-danger">.alert-primary</mark>, <mark class="text-danger">.alert-secondary</mark>, <mark class="text-danger">.alert-light</mark> or <mark class="text-danger">.alert-dark</mark>:</p>
   </div>
   <div class="container">
-    <div class="row">
-      <div style="background-color: #ff1" class="col-lg-2">
-        .col-lg-2
-      </div>
-      <div style="background-color: #ff43ee" class="col-lg-4">
-        .col-lg-4
-      </div>
-      <div style="background-color: #11ddff" class="col-lg-6">
-        .col-lg-6
-      </div>
+    <div class="alert alert-success">
+      <strong>Success!</strong> This alert box could indicate a successful or positive action.
     </div>
-    <hr>
-    <div class="container">
-      <p class="display-1">.display-1</p>
-      <p class="display-2">.display-2</p>
-      <p class="display-3">.display-3</p>
-      <p class="display-4">.display-4</p>
+    <div class="alert alert-info">
+      <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
     </div>
-    <hr>
-    <div class="container">
-      <h1>h1 code <small>small code(<code>small</code>)</small></h1>
-      <hr>
-      <p> Use the mark element to <mark>highlight text.</mark></p>
-      <!--<p> Use the abbr element to <abbr>highlight text.</abbr></p>-->
+    <div class="alert alert-warning">
+      <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
     </div>
-    <hr>
-    <div class="container">
-      <p> <p class="display-4">Add the .blockquote class to a <code>blockquote</code></p><blockquote class="blockquote"> when quoting blocks of content from another source:</blockquote></p>
+    <div class="alert alert-danger">
+      <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
     </div>
-    <hr>
-    <div class="container">
-      <dl>
-        <dt>Coffee</dt>
-        <dd>- black hot drink</dd>
-        <dt>Milk</dt>
-        <dd>- white cold drink</dd>
-      </dl>
+    <div class="alert alert-primary">
+          <strong>Primary!</strong> Indicates an important action.
     </div>
-    <hr>
-    <div class="container">
-      <p>Bootstrap 4 will style the HTML <code>kbd</code> element in the following way:</p>
-      <p>Example</p>
-      <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+    <div class="alert alert-secondary">
+          <strong>Secondary!</strong> Indicates a slightly less important action.
     </div>
-    <hr>
-    <div class="container">
-      <p>Bootstrap 4 will style the HTML <code>pre</code> element in the following way:</p>
-      <pre>Text in a pre element
-        is displayed in a fixed-width
-        font, and it preserves
-        both      spaces and
-      line breaks.</pre>
+    <div class="alert alert-dark">
+          <strong>Dark!</strong> Dark grey alert.
     </div>
-    <hr>
-    <div class="container">
-      <h2 class="display-4">Contextual Colors</h2>
-      <p>Use the contextual classes to provide "meaning through colors":</p>
-      <p>The classes for text colors are: <span class="text-muted">.text-muted</span>, <span class="text-primary">.text-primery</span>, <span class="text-success">.text-success</span>, <span class="text-info">.text-info</span>, <span class="text-warning">.text-warning</span>, <span class="text-danger">.text-danger</span>, <span class="text-secondary">.text-secondary</span>, <span class="text-white bg-dark">.text-white</span>, <span class="text-dark">.text-dark</span>, <span class="text-body">.text-body</span></p>
-      <p class="display-4">Contextual text classes can also be used on links, which will add a darker hover color</p>
-      <a href="#" class="text-muted">Muted link.</a>
-      <a href="#" class="text-primary">Primary link.</a>
-      <a href="#" class="text-success">Success link.</a>
-      <a href="#" class="text-info">Info link.</a>
-      <a href="#" class="text-warning">Warning link.</a>
-      <a href="#" class="text-danger">Danger link.</a>
-      <a href="#" class="text-secondary">Secondary link.</a>
-      <a href="#" class="text-dark">Dark grey link.</a>
-      <a href="#" class="text-body">Body/black link.</a>
-      <a href="#" class="text-light">Light grey link.</a>
+    <div class="alert alert-light">
+          <strong>Light!</strong> Light grey alert.
     </div>
-    <hr>
-    <div class="container">
-      <p class="display-3">Background colors</p>
-      <p>The classes for background colors are: <span class="bg-primary text-light">.bg-primary</span>, <span class="bg-success text-light">.bg-success</span>, <span class="bg-info text-light">.bg-info</span>, <span class="bg-warning text-light">.bg-warning</span>, <span class="bg-danger text-light">.bg-danger</span>, <span class="bg-secondary text-light">.bg-secondary</span>, <span class="bg-dark text-light">.bg-dark</span> and <span class="bg-light">.bg-light</span>.</p>
+  </div>
+  <div class="container">
+    <h2>Alert Links</h2>
+    <p>Add the alert-link class to any links inside the alert box to create "matching colored links".</p>
+    <div class="alert alert-success">
+      <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
     </div>
-    <hr>
-    <div class="container">
-      <h2 class="display-4">Bootstrap tables</h2>
-      <p>The <mark class="text-danger">.table</mark> class adds basic styling to a table:</p>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Firstanem</th>
-            <th>Lastname</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
-          </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-          </tr>
-          <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
-          </tr>
-        </tbody>
-      </table>
-      <h2>Striped table</h2>
-      <p>The <mark class="text-danger">.table-striped</mark> class adds zebra-stripes to a table:</p>
-      <table class="table-striped table">
-        <thead>
-          <tr>
-            <th>Firstanem</th>
-            <th>Lastname</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
-          </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-          </tr>
-          <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
-          </tr>
-        </tbody>
-      </table>
-      <h2>Bordered table</h2>
-      <p>The <mark class="text-danger">.table-bordered</mark> class adds borders on all sides of the table and cells:</p>
-      <table class="table-bordered table">
-        <thead>
-          <tr>
-            <th>Firstanem</th>
-            <th>Lastname</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
-          </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-          </tr>
-          <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
-          </tr>
-        </tbody>
-      </table>
-      <h2>Hover rows</h2>
-      <p>The <mark class="text-danger">.table-hover</mark> class adds a hover effect (grey background color) on table rows:</p>
-      <table class="table-hover table">
-        <thead>
-          <tr>
-            <th>Firstanem</th>
-            <th>Lastname</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
-          </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-          </tr>
-          <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
-          </tr>
-        </tbody>
-      </table>
-      <h2>Dark table</h2>
-      <p>The <mark class="text-danger">.table-dark</mark> class adds a black background to the table:</p>
-      <table class="table-dark table">
-        <thead>
-          <tr>
-            <th>Firstanem</th>
-            <th>Lastname</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
-          </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-          </tr>
-          <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
-          </tr>
-        </tbody>
-      </table>
-      <h2>Dark Striped Table</h2>
-      <p>Combine <mark class="text-danger">.table-dark</mark> and <mark class="text-danger">.table-striped</mark> to create a dark, striped table:</p>
-      <table class="table-dark table-striped table">
-        <thead>
-          <tr>
-            <th>Firstanem</th>
-            <th>Lastname</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
-          </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-          </tr>
-          <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
-          </tr>
-        </tbody>
-      </table>
-      <h2>Hoverable Dark Table</h2>
-      <p>The <mark class="text-danger">.table-hover</mark> class adds a hover effect (grey background color) on table rows:</p>
-      <table class="table-dark table-hover table">
-        <thead>
-          <tr>
-            <th>Firstanem</th>
-            <th>Lastname</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
-          </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-          </tr>
-          <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
-          </tr>
-        </tbody>
-      </table>
-      <h2>Borderless Table</h2>
-      <p>The <mark class="text-danger">.table-borderless</mark> class removes borders from the table:</p>
-      <table class="table-borderless table">
-        <thead>
-          <tr>
-            <th>Firstanem</th>
-            <th>Lastname</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
-          </tr>
-          <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-          </tr>
-          <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="alert alert-info">
+      <strong>Info!</strong> You should <a href="#" class="alert-link">read this message</a>.
     </div>
-    <div class="container">
-      <table class="table-bordered table-dark table-striped table">
-        <thead>
-          <tr>
-            <th>Муж. род</th>
-            <th>Сред. род</th>
-            <th>Жен. род</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>стеклянный</td>
-            <td>крутое</td>
-            <td>умная</td>
-          </tr>
-          <tr>
-            <td>железный</td>
-            <td>деревянное</td>
-            <td>синяя</td>
-          </tr>
-          <tr>
-            <td>светлый</td>
-            <td>серое</td>
-            <td>пластиковая</td>
-          </tr>
-          <tr>
-            <td>тёмный</td>
-            <td>красивое</td>
-            <td>прекрасная</td>
-          </tr>
-          <tr>
-            <td>зеленый</td>
-            <td>сыльное</td>
-            <td>хорошая</td>
-          </tr>
-          <tr>
-            <td>кожаный</td>
-            <td>тёплое</td>
-            <td>нежная</td>
-          </tr>
-          <tr>
-            <td>бумажный</td>
-            <td>травоядное</td>
-            <td>настоящая</td>
-          </tr>
-          <tr>
-            <td>тонкий</td>
-            <td>игровое</td>
-            <td>жадная</td>
-          </tr>
-          <tr>
-            <td>сладкий</td>
-            <td>плохое</td>
-            <td>суровая</td>
-          </tr>
-          <tr>
-            <td>удачный</td>
-            <td>жуткое</td>
-            <td>прикольная</td>
-          </tr>
-        </tbody>
-      </table>
-      </div>
-  </body>
-  </html>
+    <div class="alert alert-warning">
+      <strong>Warning!</strong> You should <a href="#" class="alert-link">read this message</a>.
+    </div>
+    <div class="alert alert-danger">
+      <strong>Danger!</strong> You should <a href="#" class="alert-link">read this message</a>.
+    </div>
+    <div class="alert alert-primary">
+      <strong>Primary!</strong> You should <a href="#" class="alert-link">read this message</a>.
+    </div>
+    <div class="alert alert-secondary">
+      <strong>Secondary!</strong> You should <a href="#" class="alert-link">read this message</a>.
+    </div>
+    <div class="alert alert-dark">
+      <strong>Dark!</strong> You should <a href="#" class="alert-link">read this message</a>.
+    </div>
+    <div class="alert alert-light">
+      <strong>Light!</strong> You should <a href="#" class="alert-link">read this message</a>.
+    </div>
+  </div>
+</div>
+</body>
+</html>
