@@ -1,25 +1,17 @@
-<?php
-// несколько получателей
-$to  = 'hqyk2004@gmail.com' . ', ';  // обратите внимание на запятую
-$to .= 'joker98989898@mail.ru';
-
-// тема письма
-$subject = 'Письмо с моего сайта';
-
-// текст письма
-$message = 'Пользователь' . $_POST['name'] . ' отправил вам письмо:<br />' . $_POST['message'] . '<br />
-Связяться с ним можно по email <a href="mailto:' . $_POST['email'] . '">' . $_POST['email'] . '</a>'
-;
-
-// Для отправки HTML-письма должен быть установлен заголовок Content-type
-$headers  = 'MIME-Version: 1.0' . "\r\n";
-$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n"; 
-
-// Дополнительные заголовки
-$headers .= 'To: Иван <Ivan@example.com>' . "\r\n"; // Свое имя и email
-$headers .= 'From: '  . $_POST['name'] . '<' . $_POST['email'] . '>' . "\r\n";
-
-
-// Отправляем
-mail($to, $subject, $message, $headers);
+<?php 
+// если была нажата кнопка "Отправить" 
+if($_POST['submit']) {
+        $title = substr(htmlspecialchars(trim($_POST['title'])), 0, 1000); 
+        $mess =  substr(htmlspecialchars(trim($_POST['mess'])), 0, 1000000); 
+        // $to - кому отправляем 
+        $to = 'test@test.ru'; 
+        // $from - от кого 
+        $from='test@test.ru'; 
+        // функция, которая отправляет наше письмо
+        mail($to, $title, $mess, 'From:'.$from); 
+        echo 'Спасибо! Ваше письмо отправлено.';
+} 
+else {
+        echo 'pix';
+}
 ?>
